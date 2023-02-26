@@ -1,0 +1,60 @@
+-- Gui to Lua
+-- Version: 3.2
+
+repeat task.wait() until game:IsLoaded()
+wait(4)
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.Position = UDim2.new(0.00350883184, 0, 0.00940173864, 0)
+Frame.Size = UDim2.new(0, 280, 0, 29)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame_2.Position = UDim2.new(0, 0, -0.206896558, 0)
+Frame_2.Size = UDim2.new(0, 280, 0, 6)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.257369131, 0, 1, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 29)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Syn"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 17.000
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.143358111, 0, 1, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "apse"
+TextLabel_2.TextColor3 = Color3.fromRGB(221, 74, 0)
+TextLabel_2.TextSize = 17.000
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0462023169, 0, 1, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 29)
+TextLabel_3.Font = Enum.Font.Arial
+local RunService = game:GetService("RunService")
+RunService.RenderStepped:Connect(function(frame) -- This will fire every time a frame is rendered
+    TextLabel_3.Text = (""..math.round(1/frame).." FPS") 
+end)
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 17.000
+
