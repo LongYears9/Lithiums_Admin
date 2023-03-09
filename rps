@@ -1,0 +1,21 @@
+game:GetService("Players").LocalPlayer.Chatted:Connect(function(cmd4)
+    if cmd4 == ".option rock" then
+        warning("Lithium's Play Time", "The Bot chose Paper, You lost" 2)
+        warning("Lithium's Play Time", "L" 1.5)
+    end
+     end) 
+
+     game:GetService("Players").LocalPlayer.Chatted:Connect(function(cmd4)
+        if cmd4 == ".option paper" then
+            warning("Lithium's Play Time", "The Bot chose Scissor, You lost" 2)
+            warning("Lithium's Play Time", "L" 1.5)
+        end
+         end) 
+
+
+         game:GetService("Players").LocalPlayer.Chatted:Connect(function(cmd4)
+            if cmd4 == ".option scissor" then
+                warning("Lithium's Play Time", "The Bot chose Rock, You lost" 2)
+                warning("Lithium's Play Time", "L" 1.5)
+            end
+             end) 
