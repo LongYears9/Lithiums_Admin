@@ -4,3 +4,6 @@ I'm leaving this script here as a memory and from the request of many of you guy
 
  Feb 26, 2023 - Jan 13, 2024
  -TheFunnyCactus
+
+Update: To run this script go to the run the initiate.lua:
+https://github.com/i5tg/Lithiums-Admin-For-Roblox-Discontinued/blob/main/Initiate
