@@ -1,5 +1,5 @@
-Prefix: ;
-Commands: ;cmds  (over 20+ commands)
+Commands: ;cmds  
+(over 20+ commands)
 
 
 This was a script for roblox which was discontinued. Yes I used to exploit on Roblox for which i am banned.
